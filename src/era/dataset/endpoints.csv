@@ -1,0 +1,104 @@
+# UName,Address,Continent,Country,Country,Code,State/City,Provider,Coordinates (Long),Coordinates (Lat)
+ap-southeast-2,ec2.ap-southeast-2.amazonaws.com,Australia,Australia,AU,Sydney,Amazon,151.2,-33.86
+australia-southeast1,australia-southeast1-gce.cloudharmony.net,Australia,Australia,AU,Sydney,Google,151.2093,-33.8688
+ast-australia-east,australia-east.azure.cloudharmony.net,Australia,Australia,AU,New South Wales,Microsoft,-33.867487,151.20699
+ast-australia-southeast,australia-southeast.azure.cloudharmony.net,Australia,Australia,AU,Victoria,Microsoft,-37.814107,144.96328
+syd-au,syd-au-ping.vultr.com,Australia,Australia,AU,Sydney,Vultr,151.3,-33.9564
+europe-west1,europe-west1-gce.cloudharmony.net,Europe,Belgium,BE,Saint-Ghislain,Google,3.8184,50.4491
+sa-east-1,ec2.sa-east-1.amazonaws.com,South America,Brazil,BR,Sao Paulo,Amazon,-46.38,-23.34
+southamerica-east1,southamerica-east1-gce.cloudharmony.net,South America,Brazil,BR,Sao Paulo,Google,-46.6333,-23.5505
+ast-brazil-south,brazil-south.azure.cloudharmony.net,South America,Brazil,BR,Sao Paulo,Microsoft,-46.7423,-23.632
+ca-central-1,ec2.ca-central-1.amazonaws.com,North America,Canada,CA,Central,Amazon,-73.6,45.5
+tor1,speedtest-tor1.digitalocean.com,North America,Canada,CA,Toronto,DigitalOcean,-79.3832,43.6532
+northamerica-northeast1,northamerica-northeast1-gce.cloudharmony.net,North America,Canada,CA,Montreal,Google,-73.567,45.5
+ast-canada-east,canada-east.azure.cloudharmony.net,North America,Canada,CA,Quebec City,Microsoft,-71.208,46.8139
+ast-canada-central,canada-central.azure.cloudharmony.net,North America,Canada,CA,Toronto,Microsoft,-79.54213,43.5324
+tor-ca,tor-ca-ping.vultr.com,North America,Canada,CA,Toronto,Vultr,-79.75613,43.76751
+cn-beijing,cn-beijing.alibaba.cloudharmony.net,Asia,China,CN,Beijing,Alibaba,116.4074,39.9042
+cn-hangzhou,cn-hangzhou.alibaba.cloudharmony.net,Asia,China,CN,Hangzhou,Alibaba,120.1551,30.2741
+cn-shanghai,cn-shanghai.alibaba.cloudharmony.net,Asia,China,CN,Shanghai,Alibaba,121.4737,31.2304
+cn-shenzhen,cn-shenzhen.alibaba.cloudharmony.net,Asia,China,CN,Shenzhen,Alibaba,114.0579,22.5431
+cn-north-1,ec2.cn-north-1.amazonaws.com.cn,Asia,China,CN,Beijing,Amazon,116.4,39.9
+cn-northwest-1,ec2.cn-northwest-1.amazonaws.com.cn,Asia,China,CN,Ningxia,Amazon,135.5,34.6
+europe-north1,europe-north1-gce.cloudharmony.net,Europe,Finland,FI,Hamina,Google,27.7,60.32
+eu-west-3,ec2.eu-west-3.amazonaws.com,Europe,France,FR,Paris,Amazon,2.35,48.86
+ast-france-central,france-central.azure.cloudharmony.net,Europe,France,FR,Paris,Microsoft,2.3522,48.8566
+par-fr,par-fr-ping.vultr.com,Europe,France,FR,Paris,Vultr,2.4132,48.7624
+eu-central-1,ec2.eu-central-1.amazonaws.com,Europe,Germany,DE,Frankfurt,Amazon,8,50
+fra1,speedtest-fra1.digitalocean.com,Europe,Germany,DE,Frankfurt,DigitalOcean,8.72,52.1109
+europe-west3,europe-west3-gce.cloudharmony.net,Europe,Germany,DE,Frankfurt,Google,8.6821,51.324
+lin-eu-central,speedtest.frankfurt.linode.com,Europe,Germany,DE,Frankfurt,Linode,8.4,50
+fra-de,fra-de-ping.vultr.com,Europe,Germany,DE,Frankfurt,Vultr,8.54,53.112
+asia-east2,asia-east2-gce.cloudharmony.net,Asia,Hong Kong,HK,Hong Kong,Google,114.169,22.31
+ast-east-asia,asia-east.azure.cloudharmony.net,Asia,Hong Kong,HK,Hong Kong,Microsoft,114.109497,22.396428
+ap-south-1,ec2.ap-south-1.amazonaws.com,Asia,India,IN,Mumbai,Amazon,73.7655,19.3
+blr1,speedtest-blr1.digitalocean.com,Asia,India,IN,Bangalore,DigitalOcean,77.5946,12.9716
+asia-south1,asia-south1-gce.cloudharmony.net,Asia,India,IN,Mumbai,Google,72.8777,19.076
+ast-south-india,india-south.azure.cloudharmony.net,Asia,India,IN,Chennai,Microsoft,80.2707,13.0827
+ast-west-india,india-west.azure.cloudharmony.net,Asia,India,IN,Mumbai,Microsoft,74.861,16.286
+ast-central-india,india-central.azure.cloudharmony.net,Asia,India,IN,Pune,Microsoft,73.856,18.5204
+ap-southeast-5,ap-southeast-5.alibaba.cloudharmony.net,Asia,Indonesia,ID,Jakarta,Alibaba,106.8456,-6.2088
+eu-west-1,ec2.eu-west-1.amazonaws.com,Europe,Ireland,IE,Ireland,Amazon,-8,53
+ast-north-europe,eu-north.azure.cloudharmony.net,Europe,Ireland,IR,Ireland,Microsoft,-6.26031,53.349805
+ap-northeast-3,ec2.ap-northeast-3.amazonaws.com,Asia,Japan,JP,Osaka,Amazon,135.502,34.693
+ap-northeast-1,ec2.ap-northeast-1.amazonaws.com,Asia,Japan,JP,Tokyo,Amazon,139.42,35.41
+asia-northeast1,asia-northeast1-gce.cloudharmony.net,Asia,Japan,JP,Tokyo,Google,139.65,35.67
+lin-ap-northeast,speedtest.tokyo2.linode.com,Asia,Japan,JA,Tokyo,Linode,139.79123,35.753
+ast-japan-west,japan-west.azure.cloudharmony.net,Asia,Japan,JP,Osaka,Microsoft,34.693738,135.502165
+ast-japan-east,japan-east.azure.cloudharmony.net,Asia,Japan,JP,Tokyo,Microsoft,139.691706,35.689487
+hnd-jp,hnd-jp-ping.vultr.com,Asia,Japan,JA,Tokyo,Vultr,139.4872,35.521
+ams2,speedtest-ams2.digitalocean.com,Europe,Netherlands,NL,Amsterdam,DigitalOcean,4.8945,52.3667
+europe-west4,europe-west4-gce.cloudharmony.net,Europe,Netherlands,NL,Eemshaven,Google,6.8355,53.4386
+ast-west-europe,eu-west.azure.cloudharmony.net,Europe,Netherlands,NL,Netherlands,Microsoft,52.370216,4.895168
+ams-nl,ams-nl-ping.vultr.com,Europe,Netherlands,NL,Amsterdam,Vultr,4.895,52.367
+ap-southeast-1,ec2.ap-southeast-1.amazonaws.com,Asia,Singapore,SG,Singapore,Amazon,103.8,1.37
+sgp1,speedtest-sgp1.digitalocean.com,Asia,Singapore,SG,Singapore,DigitalOcean,103.8198,1.3521
+asia-southeast1,asia-southeast1-gce.cloudharmony.net,Asia,Singapore,SG,Singapore,Google,103.709,1.3404
+lin-ap-south,speedtest.singapore.linode.com,Asia,Singapore,SG,Singapore,Linode,103.8198,1.3521
+ast-southeast-asia,asia-southeast.azure.cloudharmony.net,Asia,Singapore,SG,Singapore,Microsoft,103.84,1.3622
+sgp,sgp-ping.vultr.com,Asia,Singapore,SG,Singapore,Vultr,103.709,1.3404
+ast-south-africa-north,southafrica-north.azure.cloudharmony.net,Africa,South Africa,ZA,Johannesburg,Microsoft,28.0473,-26.2041
+ap-northeast-2,ec2.ap-northeast-2.amazonaws.com,Asia,South Korea,KR,Seoul,Amazon,126.98,37.56
+ast-korea-south,korea-south.azure.cloudharmony.net,Asia,South Korea,KR,Busan,Microsoft,129.0756,35.1796
+ast-korea-central,korea-central.azure.cloudharmony.net,Asia,South Korea,KR,Seoul,Microsoft,126.978,37.5665
+eu-north-1,ec2.eu-north-1.amazonaws.com,Europe,Sweden,SE,Stockholm,Amazon,18.06,59.32
+asia-east1,asia-east1-gce.cloudharmony.net,Asia,Taiwan,TW,Changhua County,Google,120.562,24.071
+me-east-1,me-east-1.alibaba.cloudharmony.net,Asia,United Arab Emirates,AE,Dubai,Alibaba,55.2708,25.2048
+eu-west-2,ec2.eu-west-2.amazonaws.com,Europe,United Kingdom,UK,London,Amazon,-0.1,51
+lon1,speedtest-lon1.digitalocean.com,Europe,United Kingdom,UK,London,DigitalOcean,-0.4,53
+europe-west2,europe-west2-gce.cloudharmony.net,Europe,United Kingdom,UK,London,Google,-0.1278,51.5074
+lin-eu-west,speedtest.london.linode.com,Europe,United Kingdom,UK,London,Linode,-0.2563,53.1343
+ast-uk-west,uk-west.azure.cloudharmony.net,Europe,United Kingdom,UK,Cardiff,Microsoft,-3.1791,51.4816
+ast-uk-south,uk-south.azure.cloudharmony.net,Europe,United Kingdom,UK,London,Microsoft,-0.6,52.875
+lon-gb,lon-gb-ping.vultr.com,Europe,United Kingdom,UK,London,Vultr,-0.375,51.2643
+us-west-1,ec2.us-west-1.amazonaws.com,North America,United States of America,US,California,Amazon,-121.96,37.35
+us-east-2,ec2.us-east-2.amazonaws.com,North America,United States of America,US,Ohio,Amazon,-83,39.96
+us-west-2,ec2.us-west-2.amazonaws.com,North America,United States of America,US,Oregon,Amazon,-123.88,46.15
+us-east-1,ec2.us-east-1.amazonaws.com,North America,United States of America,US,Virginia,Amazon,-78.45,38.13
+nyc1,speedtest-nyc1.digitalocean.com,North America,United States of America,US,New York City,DigitalOcean,-76.235,41.232
+sfo1,speedtest-sfo1.digitalocean.com,North America,United States of America,US,San Francisco,DigitalOcean,-122.4194,37.7749
+us-central1,us-central1-gce.cloudharmony.net,North America,United States of America,US,Iowa,Google,-95.51,41.13
+us-west2,us-west2-gce.cloudharmony.net,North America,United States of America,US,Los Angeles,Google,-118.24,34.05
+us-west1,us-west1-gce.cloudharmony.net,North America,United States of America,US,Oregon,Google,121.12,45.37
+us-east1,us-east1-gce.cloudharmony.net,North America,United States of America,US,South Carolina,Google,-80.02,33.03
+us-east4,us-east4-gce.cloudharmony.net,North America,United States of America,US,Virginia,Google,-77.4852,39.0403
+lin-us-west,speedtest.fremont.linode.com,North America,United States of America,US,Fremont,Linode,-121.9886,37.5485
+lin-us-southeast,speedtest.atlanta.linode.com,North America,United States of America,US,Georgia,Linode,-83,32.3
+lin-us-east,speedtest.newark.linode.com,North America,United States of America,US,Newark,Linode,-74.1724,40.7357
+lin-us-central,speedtest.dallas.linode.com,North America,United States of America,US,Texas,Linode,-96.8455,32.6462
+ast-west-us,us-west.azure.cloudharmony.net,North America,United States of America,US,California,Microsoft,-122.419416,37.774929
+ast-north-central-us,us-northcentral.azure.cloudharmony.net,North America,United States of America,US,Illinois,Microsoft,-87.629798,41.878114
+ast-central-us,us-central.azure.cloudharmony.net,North America,United States of America,US,Iowa,Microsoft,-93.4725,41.65
+ast-south-central-us,us-southcentral.azure.cloudharmony.net,North America,United States of America,US,Texas,Microsoft,98.493628,29.424122
+ast-east-us,us-east.azure.cloudharmony.net,North America,United States of America,US,Virginia,Microsoft,36.667143,-78.388751
+ast-east-us-2,us-east2.azure.cloudharmony.net,North America,United States of America,US,Virginia,Microsoft,36.667143,-78.388751
+ast-west-us-2,us-west2.azure.cloudharmony.net,North America,United States of America,US,Washington,Microsoft,-120.7401,47.7511
+ast-west-central-us,us-westcentral.azure.cloudharmony.net,North America,United States of America,US,Wyoming,Microsoft,-107.2903,43.076
+sjo-ca,sjo-ca-us-ping.vultr.com,North America,United States of America,US,California,Vultr,-121.8863,37.3382
+lax-ca,lax-ca-us-ping.vultr.com,North America,United States of America,US,California,Vultr,-122.0575,37.3875
+fl-us,fl-us-ping.vultr.com,North America,United States of America,US,Florida,Vultr,-81.5158,27.6648
+ga-us,ga-us-ping.vultr.com,North America,United States of America,US,Georgia,Vultr,-82.9001,32.1656
+il-us,il-us-ping.vultr.com,North America,United States of America,US,Illinois,Vultr,-89.3985,-40.6331
+nj-us,nj-us-ping.vultr.com,North America,United States of America,US,New York,Vultr,-74.006,40.7128
+tx-us,tx-us-ping.vultr.com,North America,United States of America,US,Texas,Vultr,-96.797,32.7767
+wa-us,wa-us-ping.vultr.com,North America,United States of America,US,Washington,Vultr,-120.6715,47.65378

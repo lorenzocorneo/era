@@ -1,0 +1,155 @@
+#!/usr/bin/env python
+
+import os
+import re
+import sys
+
+from ripe.atlas.tools.commands.base import Command, Factory
+from ripe.atlas.tools.commands.measure import Factory as BaseFactory
+from ripe.atlas.tools.exceptions import RipeAtlasToolsException
+
+
+class RipeAtlas(object):
+    def __init__(self):
+        self.command = None
+        self.args = []
+        self.kwargs = {}
+
+    def _generate_usage(self):
+        usage = "Usage: ripe-atlas <command> [arguments]\n\n"
+        usage += "Commands:\n"
+        longest_command = 0
+        classes = []
+        for c in Command.get_available_commands():
+            if c == "shibboleet":
+                continue
+            cmd_class = Command.load_command_class(c)
+            classes.append(cmd_class)
+            cmd_name = cmd_class.get_name()
+            if len(cmd_name) > longest_command:
+                longest_command = len(cmd_name)
+        for cmd_cls in classes:
+            usage += "\t{} {}\n".format(
+                cmd_cls.get_name().ljust(longest_command + 1),
+                cmd_cls.DESCRIPTION,
+            )
+        usage += ("\nFor help on a particular command, try "
+                  "ripe-atlas <command> --help")
+        return usage
+
+    def _set_base_command(self):
+        """
+        Sets the base command covering cases where we call it with
+        shortcut or asking for help.
+        """
+        caller = os.path.basename(sys.argv[0])
+        shortcut = re.match('^a(ping|traceroute|dig|sslcert|ntp|http)$',
+                            caller)
+
+        if shortcut:
+            self.command = "measure"
+            sys.argv.insert(1, self._translate_shortcut(shortcut.group(1)))
+            return
+
+        if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+            self.command = "help"
+            return
+
+        self.command = sys.argv.pop(1)
+
+    @staticmethod
+    def _translate_shortcut(shortcut):
+        if shortcut == "dig":
+            return "dns"
+        return shortcut
+
+    def autocomplete(self):
+        """
+        This function is highly inspired from Django's own autocomplete
+        manage.py. For more documentation check
+        https://github.com/django/django/blob/1.9.4/django/core/management/__init__.py#L198-L270
+        """
+        def print_options(options, curr):
+            """
+            Prints matching with current word available autocomplete options
+            in a formatted way to look good on bash.
+            """
+            sys.stdout.write(' '.join(
+                sorted(filter(lambda x: x.startswith(curr), options))))
+
+        # If we are not autocompleting continue as normal
+        if 'RIPE_ATLAS_AUTO_COMPLETE' not in os.environ:
+            return
+
+        cwords = os.environ['COMP_WORDS'].split()[1:]
+        cword = int(os.environ['COMP_CWORD'])
+
+        try:
+            curr = cwords[cword - 1]
+        except IndexError:
+            curr = ''
+
+        commands = list(Command.get_available_commands())
+
+        # base caller ripe-atlas
+        if cword == 1:
+            print_options(commands, curr)
+        # special measure command
+        elif cword == 2 and cwords[0] == "measure":
+            print_options(BaseFactory.TYPES.keys(), curr)
+        # rest of commands
+        elif cwords[0] in commands:
+            cmd = self.fetch_command_class(cwords[0], cwords)
+            cmd.add_arguments()
+            options = [
+                sorted(s_opt.option_strings)[0]
+                for s_opt in cmd.parser._actions if s_opt.option_strings
+            ]
+            previous_options = [x for x in cwords[1:cword - 1]]
+            options = [opt for opt in options if opt not in previous_options]
+            print_options(options, curr)
+
+        sys.exit(1)
+
+    def fetch_command_class(self, command, arg_options):
+        """Fetches the class responsible for the given command."""
+
+        cmd_cls = Command.load_command_class(command)
+
+        if cmd_cls is None:
+            # Module containing the command class wasn't found
+            raise RipeAtlasToolsException("No such command")
+
+        #
+        # If the imported module contains a `Factory` class, execute that
+        # to get the `cmd` we're going to use.  Otherwise, we expect there
+        # to be a `Command` class in there.
+        #
+
+        if issubclass(cmd_cls, Factory):
+            cmd = cmd_cls(arg_options).create()
+        else:
+            cmd = cmd_cls(*self.args, **self.kwargs)
+
+        return cmd
+
+    def main(self):
+
+        self._set_base_command()
+
+        self.autocomplete()
+
+        if self.command == "help":
+            raise RipeAtlasToolsException(self._generate_usage())
+
+        cmd = self.fetch_command_class(self.command, sys.argv)
+        cmd.init_args()
+        cmd.run()
+
+
+if __name__ == '__main__':
+    try:
+        sys.exit(RipeAtlas().main())
+    except RipeAtlasToolsException as e:
+        e.write()
+        raise SystemExit()
